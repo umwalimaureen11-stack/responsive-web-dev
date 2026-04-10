@@ -369,3 +369,40 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f9fafb; colo
 }
 .feature-card h3 { font-size: 1.05rem; font-weight: 700; color: #111827; margin-bottom: 0.5rem; }
 .feature-card p { font-size: 0.9rem; color: #6b7280; line-height: 1.6; }
+/* ── Footer ── */
+footer {
+  background: #111827;
+  color: #9ca3af;
+  padding: 3rem 1rem 1.5rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #1f2937;
+}
+.footer-brand .logo { color: #818cf8; }
+.footer-brand .logo span { color: #fff; }
+.footer-brand p { font-size: 0.875rem; margin-top: 0.75rem; line-height: 1.6; }
+.footer-col h4 { font-size: 0.875rem; font-weight: 700; color: #fff; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+.footer-col ul a { font-size: 0.875rem; color: #9ca3af; text-decoration: none; transition: color .2s; }
+.footer-col ul a:hover { color: #fff; }
+.footer-bottom { max-width: 72rem; margin: 1.5rem auto 0; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.5rem; font-size: 0.8rem; }
+
+/* ── Responsive: md (768px+) ── */
+@media (min-width: 768px) {
+  .container { padding-left: 2rem; padding-right: 2rem; }
+  .nav-links { display: flex; }
+  .nav-cta { display: inline-block; }
+  .hamburger { display: none; }
+  .hero { padding: 5rem 2rem 6rem; }
+  .hero-image-wrap { width: 90%; }
+  .hero h1 { font-size: 2.75rem; }
+  .features-grid { grid-template-columns: repeat(2, 1fr); }
+  .pricing-grid { grid-template-columns: repeat(3, 1fr); align-items: start; }
+  .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr; }
+}
