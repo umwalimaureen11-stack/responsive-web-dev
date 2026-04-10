@@ -406,3 +406,17 @@ footer {
   .pricing-grid { grid-template-columns: repeat(3, 1fr); align-items: start; }
   .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr; }
 }
+* ── Responsive: lg (1024px+) ── */
+@media (min-width: 1024px) {
+  .hero { padding: 6rem 2rem 7rem; }
+  .hero-image-wrap { width: 90%; max-width: 900px; }
+  .hero h1 { font-size: 3.5rem; }
+  .features-grid { grid-template-columns: repeat(3, 1fr); }
+  .pricing-card.popular { transform: scale(1.05); }
+  .pricing-card.popular:hover { transform: scale(1.05) translateY(-4px); }
+}
+
+/* ── Responsive: xl (1280px+) ── */
+@media (min-width: 1280px) {
+  .hero h1 { font-size: 4rem; }
+}
