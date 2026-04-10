@@ -212,3 +212,70 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f9fafb; colo
   z-index: 1;
   text-align: center;
 }
+.hero-img-placeholder .placeholder-text p { font-size: 0.8rem; opacity: 0.8; margin-top: 0.5rem; }
+
+.hero-badge {
+  display: inline-block;
+  background: #e0e7ff;
+  color: #4f46e5;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.35rem 1rem;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+}
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.hero h1 .highlight { color: #4f46e5; }
+.hero p {
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.7;
+  max-width: 36rem;
+  margin: 0 auto 2rem;
+}
+.btn-primary {
+  display: inline-block;
+  background: #4f46e5;
+  color: #fff;
+  padding: 0.875rem 2rem;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background .2s, transform .2s, box-shadow .2s;
+  box-shadow: 0 4px 14px rgba(79,70,229,.4);
+}
+.btn-primary:hover { background: #4338ca; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(79,70,229,.45); }
+.btn-secondary {
+  display: inline-block;
+  background: transparent;
+  color: #4f46e5;
+  padding: 0.875rem 2rem;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid #4f46e5;
+  transition: all .2s;
+  margin-left: 0.75rem;
+}
+.btn-secondary:hover { background: #4f46e5; color: #fff; }
+.hero-cta-group { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+.hero-stat { text-align: center; }
+.hero-stat strong { display: block; font-size: 1.5rem; font-weight: 800; color: #111827; }
+.hero-stat span { font-size: 0.8rem; color: #6b7280; }
